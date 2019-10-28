@@ -1,0 +1,33 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+body    {
+    background: url(.././images/background.jpg);
+    margin: 15px auto;
+}
+img {
+    margin: 15px;
+    border-radius: 15px;
+}
+.gallery    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+@media (min-width: 970px) and (max-width: 1170px)   {
+    .gallery    {
+        grid-template-columns: repeat(3, 1fr);
+}
+}
+@media (min-width: 750px) and (max-width: 970px)   {
+    .gallery    {
+        grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (min-width: 0px) and (max-width: 750px)   {
+    .gallery    {
+        grid-template-columns: 1fr;
+}
+}
